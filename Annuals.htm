@@ -1,0 +1,60 @@
+<html>
+	<head>
+		
+		<script runat="server"  type="text/javascript"  id=script1>
+<!--
+function redirect()
+{
+window.location = "AdamsCollectables.htm";
+}
+
+
+function changepic()
+{
+if (FormBooks.Select1.value == 0)FormBooks.imgpic.src="img_0587.jpg";
+if (FormBooks.Select1.value == 1)FormBooks.imgpic.src="img_0655.jpg";
+if (FormBooks.Select1.value == 5)FormBooks.imgpic.src="img_0586.jpg";
+if (FormBooks.Select1.value == 8)FormBooks.imgpic.src="img_0666.jpg";
+if (FormBooks.Select1.value == 9)FormBooks.imgpic.src="img_0668.jpg";
+if (FormBooks.Select1.value == 31)FormBooks.imgpic.src="IMG_0741.JPG";
+
+
+}
+
+
+//-->
+
+		</script>
+		
+	</head>
+	<body MS_POSITIONING="GridLayout" bgcolor="#66cccc">
+		<form id=FormBooks method="post" runat="server">
+			<IMG align="top" height="139" alt="" src="bigpic.jpg" width="1026">
+			<DIV style="DISPLAY: inline;  FONT-SIZE: 8mm; Z-INDEX: 101; LEFT: 0px; WIDTH: 1022px; COLOR: yellow; TEXT-INDENT: 5mm;  FONT-STYLE: italic; FONT-FAMILY: 'Comic Sans MS'; POSITION: absolute; TOP: 21px; HEIGHT: 152px; TEXT-ALIGN: left"
+				ms_positioning="FlowLayout">Annuals</DIV>			
+			<a style="Z-INDEX: 102; LEFT: 8px; WIDTH: 200px; FONT-FAMILY: 'Arial'; FONT-SIZE: 4mm; FONT-STYLE: italic; POSITION: absolute; TOP: 160px; HEIGHT: 14px" href="AdamsCollectables.htm">Back to Home Page</a>		
+
+				
+				<img runat=server style="Z-INDEX: 102; LEFT: 440px; WIDTH: 320px; POSITION: absolute; TOP: 190px; HEIGHT: 240px" src=img_0587.jpg   id=imgpic name=imgpic border=5 >
+				<SELECT NAME = List1 STYLE = "color: blue; background: #ccffff; LEFT: 108px; Width: 250px; POSITION: absolute; TOP: 190px; HEIGHT: 244px"  ID="Select1" size=4  >
+					<OPTION Value = 0>Beezer</OPTION>
+					<OPTION Value = 1>Brownie</OPTION>
+					<OPTION Value = 5>Look-in</OPTION>
+					<OPTION Value = 8>Rupert</OPTION>
+					<OPTION Value = 9>Rupert Annual</OPTION>
+					<OPTION Value = 31>Dennis and Gnasher</OPTION>
+
+
+
+				</SELECT>
+               <input style="Z-INDEX: 103; LEFT: 378px;; WIDTH: 50px; POSITION: absolute; TOP: 190px; HEIGHT: 24px" type="button"
+                      value="View"
+                      OnClick="changepic()"
+                      runat="server" ID="Submit1" NAME="Submit1"/>
+
+			<INPUT style="Z-INDEX: 102; LEFT: 8px; WIDTH: 144px; POSITION: absolute; TOP: 480px; HEIGHT: 24px"
+				type="button" value="Home Page" ONCLICK="redirect()" ID="Button1" NAME="Button1">
+
+		</form>
+	</body>
+</html>
